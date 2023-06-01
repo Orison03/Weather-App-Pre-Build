@@ -37,7 +37,7 @@ const WeatherContent = () => {
     <section>
       {/* search content */}
       <div className="w-[90%] mx-auto md:w-[70%] lg:w-[50%]">
-        <h1 className="text-4xl mt-6 text-white font-semi-bold leading-[1.3] md:text-5xl">
+        <h1 className="text-3xl mt-6 text-white font-semi-bold leading-[1.3] md:text-5xl">
           Let's check the weather now in{" "}
           <span className="font-bold underline underline-offset-4 inline-block">
             {location ? location : <p>...</p>}
@@ -76,7 +76,7 @@ const WeatherContent = () => {
       {/* weather content */}
       <div className="w-[90%] mx-auto">
         {weatherData && (
-          <div className="mt-12 pl-16 border border-transparent rounded-lg shadow-xl text-white flex flex-col p-10 md:flex-row justify-between md:items-center">
+          <div className="mt-12 pl-16 border border-transparent rounded-lg shadow-xl text-white flex flex-col p-10 md:flex-row justify-between md:items-center mb-6">
             <img
               src={getWeatherIcon(weatherData.weather[0].icon)}
               alt={weatherData.weather[0].description}
